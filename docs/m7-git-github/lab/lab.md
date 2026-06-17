@@ -7,6 +7,16 @@ New to it? See **[How to open your Codespace](../../resources/install-guides/cod
 > Heads up: Git is almost all undo-able — commit early and often, you can't really lose work.
 > Use `git status` any time you're unsure what's going on.
 
+### The flow you'll build
+Your edits move through four places — each step below is one of these arrows (branch & merge happen inside your local repo):
+```mermaid
+flowchart LR
+  W["Working files"] -->|git add| S["Staging area"]
+  S -->|git commit| L["Local repo (history)"]
+  L -->|git push| R["GitHub (the cloud)"]
+  R -.->|git pull| W
+```
+
 ---
 
 ## Step 1 — Tell Git who you are (one time)

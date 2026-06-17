@@ -7,6 +7,15 @@ New to the Codespace? See **[How to open it](../../resources/install-guides/code
 > Heads up: containers are sealed, throwaway boxes — anything you do is `docker rm`-able and remakeable.
 > You can't make a mess that won't wipe away.
 
+### What you'll do
+Part 10a runs a ready-made image; Part 10b builds your own from a Dockerfile:
+```mermaid
+flowchart LR
+  REG["Registry (Docker Hub)"] -->|docker run| C1["Container: running app"]
+  DF["Dockerfile (recipe)"] -->|docker build| IMG["Your image"]
+  IMG -->|docker run| C2["Your container"]
+```
+
 ---
 
 # Part 10a — Run a real app in a container (~30 min)

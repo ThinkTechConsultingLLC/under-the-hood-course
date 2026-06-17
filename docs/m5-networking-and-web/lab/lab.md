@@ -8,6 +8,16 @@ New to the Codespace? See **[How to open it](../../resources/install-guides/code
 > changes your machine. We'll follow one site, `example.com`, on its whole journey. The same trip
 > happens for **every** site you visit.
 
+### The trip you'll trace
+Every site you open makes this round trip — you'll do each leg by hand:
+```mermaid
+flowchart LR
+  U["You / browser"] -->|DNS lookup| DNS["DNS: name to IP"]
+  DNS -->|IP address| U
+  U -->|HTTPS request| SRV["Server / CDN"]
+  SRV -->|200 response| U
+```
+
 ---
 
 ## Step 1 — Open your terminal

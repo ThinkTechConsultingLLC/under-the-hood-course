@@ -6,6 +6,13 @@
 > Heads up: creating/moving folders is safe and undo-able, and we won't touch system files.
 > If something looks different from the example, note it and keep going. (Recap in the [notes](../notes.md).)
 
+### The chain you'll trace
+Steps 1–3 follow your computer from the power button to the desktop:
+```mermaid
+flowchart LR
+  P["Power on"] --> F["Firmware (BIOS / UEFI)"] --> B["Bootloader"] --> O["Operating system"] --> D["Desktop"]
+```
+
 ---
 
 ## Step 1 — Name your operating system
