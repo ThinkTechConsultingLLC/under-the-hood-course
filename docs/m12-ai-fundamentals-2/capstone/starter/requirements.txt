@@ -1,0 +1,4 @@
+# This capstone starter uses only Python's standard library — nothing to install.
+# When you add real AI libraries later, list them here (one per line), e.g.:
+#   transformers
+#   scikit-learn

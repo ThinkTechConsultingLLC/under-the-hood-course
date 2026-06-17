@@ -1,0 +1,15 @@
+Computers are surprisingly dumb machines that follow simple instructions very fast.
+A computer turns input into output and can store the result.
+The CPU does the work and the GPU does the same simple math on many numbers at once.
+A model learns patterns from data and then predicts what word comes next.
+Training teaches the model from examples and inference uses the model to make predictions.
+The data a model learns from matters more than almost anything else.
+The command line lets you get things done by typing one clear instruction at a time.
+The internet connects computers and the web is the pages and apps that ride on top of it.
+Security protects what is private and the strongest habit is to slow down and verify.
+Git tracks every change and GitHub shares your work with the world.
+The cloud is just someone else's computer in a big data center far away.
+A virtual machine pretends to be a whole computer and a container packages one app.
+Containers package an app so it runs the same way everywhere it goes.
+An AI model is brilliant and confident but brilliant and confident is not the same as correct.
+Always verify what the model tells you and never paste your secrets into it.
