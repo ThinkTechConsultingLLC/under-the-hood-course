@@ -1,0 +1,22 @@
+{
+  "name": "Under the Hood — Linux lab (M3–M6)",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  // M6 needs Docker; docker-in-docker gives a working Docker inside the Codespace.
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+
+  // Install the few command-line tools the labs use that aren't in the base image.
+  // Verified on the base image (Ubuntu): this installs ping, dig, nslookup, and cal.
+  //   M4 uses ps/top/kill/id (already present); M5 uses ping/dig/nslookup/curl; M3 uses cal (bonus).
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y iputils-ping bind9-dnsutils ncal",
+
+  // M6 lab runs a web app on container port 80 mapped to 8080 — forward it so the browser can reach it.
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": { "label": "M6 web app (nginx)", "onAutoForward": "notify" }
+  },
+
+  "remoteUser": "vscode"
+}

@@ -1,0 +1,13 @@
+# MkDocs build output
+site/
+
+# Python virtual environments & caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Third-party SOURCE materials — copyrighted, licences forbid redistribution
+# (TLCL = CC BY-NC-ND, INFN deck = CC BY-NC-SA, others all-rights-reserved).
+# Our notes re-express these in original words; the source PDFs must NOT be committed.
+*.pdf

@@ -1,0 +1,99 @@
+site_name: "Under the Hood — How Computers & AI Really Work"
+site_description: "A hands-on, live-online course for adult beginners — how computers, the OS, networking, containers, and AI actually work."
+
+# Course content lives in the course folder; build the site from there.
+docs_dir: course-01-computers-and-ai
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+
+markdown_extensions:
+  - admonition
+  - md_in_html
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+# Keep instructor-only and tooling files out of the published learner site.
+exclude_docs: |
+  prompts/
+  _templates/
+  **/solution/
+
+nav:
+  - Home: README.md
+  - Syllabus: SYLLABUS.md
+  - Start here: START-HERE/README.md
+  - "M1 · What is a computer":
+      - Overview: m1-what-is-a-computer/README.md
+      - Notes: m1-what-is-a-computer/notes.md
+      - Lab: m1-what-is-a-computer/lab/lab.md
+  - "M2 · OS & filesystem":
+      - Overview: m2-os-and-files/README.md
+      - Notes: m2-os-and-files/notes.md
+      - Lab: m2-os-and-files/lab/lab.md
+  - "M3 · Command line":
+      - Overview: m3-command-line/README.md
+      - Notes: m3-command-line/notes.md
+      - Lab: m3-command-line/lab/lab.md
+  - "M4 · Inside the OS":
+      - Overview: m4-inside-the-os/README.md
+      - Notes: m4-inside-the-os/notes.md
+      - Lab: m4-inside-the-os/lab/lab.md
+  - "M5 · Networking & web":
+      - Overview: m5-networking-and-web/README.md
+      - Notes: m5-networking-and-web/notes.md
+      - Lab: m5-networking-and-web/lab/lab.md
+  - "M6 · Security & privacy":
+      - Overview: m6-security/README.md
+      - Notes: m6-security/notes.md
+      - Lab: m6-security/lab/lab.md
+  - "M7 · Git & GitHub":
+      - Overview: m7-git-github/README.md
+      - Notes: m7-git-github/notes.md
+      - Lab: m7-git-github/lab/lab.md
+  - "M8 · The Cloud":
+      - Overview: m8-cloud/README.md
+      - Notes: m8-cloud/notes.md
+      - Lab: m8-cloud/lab/lab.md
+  - "M9 · Virtualization & VMs":
+      - Overview: m9-virtualization/README.md
+      - Notes: m9-virtualization/notes.md
+      - Lab: m9-virtualization/lab/lab.md
+  - "M10 · Containers":
+      - Overview: m10-containers/README.md
+      - Notes: m10-containers/notes.md
+      - Lab: m10-containers/lab/lab.md
+  - "M11 · AI Fundamentals I":
+      - Overview: m11-ai-fundamentals-1/README.md
+      - Notes: m11-ai-fundamentals-1/notes.md
+      - Lab: m11-ai-fundamentals-1/lab/lab.md
+  - "M12 · AI Fundamentals II + Capstone":
+      - Overview: m12-ai-fundamentals-2/README.md
+      - Notes: m12-ai-fundamentals-2/notes.md
+      - Lab: m12-ai-fundamentals-2/lab/lab.md
+  - Resources:
+      - Glossary: resources/glossary.md
+      - "Cheat-card · Linux commands": resources/cheat-cards/linux-commands.md
+      - "Install guides": resources/install-guides/README.md
+      - "Lab · Codespaces": resources/install-guides/codespaces.md
+      - "Install · terminal": resources/install-guides/terminal.md
+      - "Install · Docker": resources/install-guides/docker.md

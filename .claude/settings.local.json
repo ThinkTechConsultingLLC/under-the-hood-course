@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '{print $5\"\\\\t\"$9}')",
+      "Bash(command -v pdftotext pdfinfo mutool)",
+      "Bash(command -v mmdc)",
+      "Bash(pdftotext \"Lecture5.pdf\" /tmp/lec5.txt)",
+      "Bash(pdfinfo Lecture5.pdf)",
+      "Bash(echo \"total lines: $\\(wc -l < /tmp/lec5.txt\\) pages: $\\(pdfinfo Lecture5.pdf)",
+      "Bash(docker run *)",
+      "Bash(pdftotext \"Docker.pdf\" /tmp/docker2.txt)",
+      "Bash(pdfinfo Docker.pdf)",
+      "Bash(echo \"lines: $\\(wc -l < /tmp/docker2.txt\\) pages: $\\(pdfinfo Docker.pdf)",
+      "Bash(grep -nE '^#{1,3} ' course-01-computers-and-ai/m6-containers/notes.md)",
+      "Bash(docker rm *)",
+      "Bash(curl -s -o /dev/null -w \"HTTP status: %{http_code}\\\\n\" http://localhost:8080)",
+      "Bash(curl -s http://localhost:8080)",
+      "Bash(pdftotext \"intro.pdf\" /tmp/intro.txt)",
+      "Bash(pdfinfo intro.pdf)",
+      "Bash(echo \"lines: $\\(wc -l < /tmp/intro.txt\\) pages: $\\(pdfinfo intro.pdf)"
+    ]
+  }
+}
