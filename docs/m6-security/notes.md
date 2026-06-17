@@ -82,6 +82,36 @@ Then, on your own accounts: confirm **2FA is on for your email**, and skim your 
 </details>
 
 ---
+
+## Check yourself
+Lock in today's win — answer each in your head (or out loud), then reveal.
+
+**1. What are the three things "security" protects, and what does each one mean?**
+
+??? success "Show answer"
+    The **C-I-A** trio: **Confidentiality** (keep secrets secret), **Integrity** (nobody tampers with your data without you knowing), and **Availability** (your stuff stays usable, e.g. not locked up by ransomware).
+
+**2. Most real attacks aren't movie-hacker wizardry — so what do they actually exploit, and what habits fix them?**
+
+??? success "Show answer"
+    They mostly exploit **humans (phishing)**, **weak or reused passwords**, and **unpatched software**. The fixes are simple habits: **2FA**, a **password manager**, **auto-updates**, and pausing before you click.
+
+**3. How does a good system store your password, and why is that safer if the database leaks?**
+
+??? success "Show answer"
+    It never stores the password itself — it stores a **hash**, a scrambled, one-way fingerprint. You **can't run it backwards** to recover the password, so a leaked database (if built right) reveals only hashes, not your actual password.
+
+**4. What's the difference between encryption and hashing?**
+
+??? success "Show answer"
+    **Encryption is reversible** with the right key — used for data you need to get back (like **HTTPS/TLS** in transit or **disk encryption** at rest). **Hashing is one-way** — used for passwords and integrity checks.
+
+**5. What's the unbreakable rule for avoiding phishing?**
+
+??? success "Show answer"
+    **Never enter a password from a link in a message.** Instead, go to the site yourself or verify through a separate channel — watch for red flags like **urgency**, a **mismatched sender**, and **links that don't match**.
+
+---
 **New words** (also in `resources/glossary.md`): threat model, authentication, hash, two-factor authentication (2FA), password manager, encryption, phishing, least privilege, patching.
 
 **Source:** original — written for this course. The hashing demonstration was verified by running it in the course's Linux (Codespaces) environment; the diagrams are original.

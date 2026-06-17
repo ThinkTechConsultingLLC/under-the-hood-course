@@ -69,6 +69,36 @@ In the lab you'll open **Teachable Machine**, show it examples of two things (sa
 </details>
 
 ---
+
+## Check yourself
+Lock in today's win — answer each in your head (or out loud), then reveal.
+
+**1. How do AI, machine learning, deep learning, and LLMs relate to each other?**
+
+??? success "Show answer"
+    They're **nested dolls, not rivals** — each sits inside the one before. **AI** is the umbrella (anything that seems smart), **machine learning** is AI that learns patterns from examples, **deep learning** is ML done with layered **neural networks**, and **LLMs** are deep-learning models trained on text to predict words.
+
+**2. What's the big shift that made modern AI take off — "telling" vs "showing"?**
+
+??? success "Show answer"
+    Old-style programming means writing the rules yourself, which collapses on messy tasks (like spotting a cat in a photo). Machine learning flips this: you **show** the computer thousands of labelled examples and it works out the pattern itself — **teach by showing, not telling**.
+
+**3. What's the difference between training and inference?**
+
+??? success "Show answer"
+    **Training** is the learning phase — the model sees many examples and adjusts itself; it's slow, occasional, and expensive. **Inference** is the using phase — you hand the trained model something new and it makes a fast prediction. Like **studying for an exam** vs **answering on exam day**.
+
+**4. What three things collided to cause the current AI wave?**
+
+??? success "Show answer"
+    **Data** (oceans of text and images from the internet), **compute** (**GPUs** doing the same math in parallel), and a breakthrough design — the **transformer** (2017), which handles context well and scales beautifully with more data and GPUs.
+
+**5. Why does the data a model is trained on matter so much?**
+
+??? success "Show answer"
+    A model is a **mirror of its training data** — lopsided examples produce a lopsided model, like a face system that works worse for some groups or a hiring model that repeats biased history. **Garbage in, garbage out**, so the sharpest question to ask about any AI is *what data was it trained on?*
+
+---
 **New words** (also in `resources/glossary.md`): artificial intelligence (AI), machine learning (ML), deep learning (DL), large language model (LLM), neural network, model, training, inference, weights, labelled data, bias, transformer. (Callback: GPU (M1).)
 
 **Source:** original — written for this course. No third-party text or figures; the diagrams are original. (The lab uses Google's free **Teachable Machine**.)

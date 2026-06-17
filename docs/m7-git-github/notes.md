@@ -60,6 +60,36 @@ In your Codespace you'll run the whole local flow — `git init`, `git add`, `gi
 </details>
 
 ---
+
+## Check yourself
+Lock in today's win — answer each in your head (or out loud), then reveal.
+
+**1. What problem does version control solve, and what does it save instead of a folder full of `_v2_FINAL` files?**
+
+??? success "Show answer"
+    It kills the messy "save-as" approach by keeping **one** folder with a complete, labelled **history**. **Version control** saves **snapshots** of your whole project over time, each with a note on what changed, so you can rewind, compare, and undo.
+
+**2. What is a commit, and what two steps create one?**
+
+??? success "Show answer"
+    A **commit** is a saved snapshot plus a short message. You create one by first **staging** the changes you want (`git add`), then **committing** them with a message (`git commit -m "what I did"`).
+
+**3. What is a branch, and why is it useful?**
+
+??? success "Show answer"
+    A **branch** is a separate line of work where you can try a new feature or risky fix while the main version stays untouched. When you're happy, you **merge** it back in — this lets you experiment safely and lets whole teams work on the same project at once.
+
+**4. What's the difference between Git and GitHub?**
+
+??? success "Show answer"
+    **Git** is the *tool* running on your own computer, tracking a **local** repository. **GitHub** is a *service* that hosts a **remote** copy of your repo in the cloud for backup, sharing, and collaboration.
+
+**5. What is the everyday loop of modern software work?**
+
+??? success "Show answer"
+    The rhythm is `clone → commit → push → pull`: you **clone** a remote repo (or **init** a fresh one), **edit → add → commit** locally (this works offline), then **push** your commits to GitHub and **pull** to get teammates' commits down.
+
+---
 **New words** (also in `resources/glossary.md`): version control, Git, GitHub, repository (repo), commit, branch, merge, remote, clone, push, pull.
 
 **Source:** original — written for this course. The full local Git flow (init → commit → log → branch → merge) was verified by running it in the course's Codespaces environment; the diagrams are original.

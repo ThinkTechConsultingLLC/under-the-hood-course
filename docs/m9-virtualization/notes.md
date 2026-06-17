@@ -61,6 +61,36 @@ In your Codespace, a container shows the contrast directly: an `alpine` containe
 </details>
 
 ---
+
+## Check yourself
+Lock in today's win — answer each in your head (or out loud), then reveal.
+
+**1. What is virtualization, and what problem does it solve?**
+
+??? success "Show answer"
+    **Virtualization** is software that creates fake, "virtual" computers on top of one real one — making **one machine act like many**. Each virtual computer believes it has its own hardware and runs as a whole, separate machine.
+
+**2. What is a virtual machine (VM), and what is the hypervisor's job?**
+
+??? success "Show answer"
+    A **VM** is a complete fake computer with its own **guest operating system** and pretend hardware, running on top of a real machine (the **host**). The **hypervisor** is the software that creates and runs VMs, slicing the real CPU, RAM, and disk among them.
+
+**3. How did virtualization make the cloud possible?**
+
+??? success "Show answer"
+    It changed the economics: instead of one idle app per server, you **chop one powerful server into many isolated VMs**, use the hardware fully, and **rent the VMs out by the hour**. That is how the cloud began — AWS started by renting virtual machines. No virtualization, no cloud.
+
+**4. What is the key difference between a VM and a container?**
+
+??? success "Show answer"
+    A **VM** is a whole separate computer carrying its own **full guest OS** (gigabytes, ~a minute to boot, very strong isolation). A **container** is just a fenced-off process that **shares the host's OS kernel** (megabytes, ~a second to start, lighter isolation). Think separate **houses** versus **apartments** in one building.
+
+**5. In the Codespace demo, how does an `alpine` container prove it carries no OS of its own?**
+
+??? success "Show answer"
+    The container is only ~**13 MB** and starts in **under a second**, and running `uname` inside it reports the **host's Linux kernel** — proof it has no guest OS. A VM doing the same job would be **gigabytes** and take a minute to boot.
+
+---
 **New words** (also in `resources/glossary.md`): virtualization, virtual machine (VM), hypervisor, guest OS, host OS. (Callbacks: namespaces/cgroups (M4), the cloud (M8), containers (M10).)
 
 **Source:** original — written for this course. The container-footprint demonstration was verified by running it in the course's container environment; the diagrams are original.

@@ -75,6 +75,36 @@ Computers are **multi-user** by design, so every file has an **owner** and **per
 </details>
 
 ---
+
+## Check yourself
+Lock in today's win — answer each in your head (or out loud), then reveal.
+
+**1. What four things does the operating system manage?**
+
+??? success "Show answer"
+    The **operating system** manages **programs** (starting/stopping them and sharing the CPU and RAM), **hardware** (using small helper programs called **drivers**), **files** (the filesystem), and **users** (keeping people's stuff separate and protected).
+
+**2. Walk through the boot chain: what happens from pressing power to seeing a desktop?**
+
+??? success "Show answer"
+    The CPU runs the **firmware** (BIOS or UEFI), which self-tests the hardware and finds a disk; it hands off to the **bootloader**, whose only job is to load the OS; the **kernel** then loads, starts its services, and gives you a login screen or desktop.
+
+**3. What's the difference between firmware and the OS?**
+
+??? success "Show answer"
+    **Firmware** is tiny, permanent software living on a chip that runs *first* and knows just enough to start the machine. The **OS** is the big software loaded *from storage* that runs everything afterward.
+
+**4. What is a path, and how do absolute and relative paths differ?**
+
+??? success "Show answer"
+    A **path** is a file's address — the route through the folders to reach it. An **absolute** path starts at the top (like `/Users/me/Documents`), while a **relative** path starts from wherever you currently are.
+
+**5. What is a filesystem, and why don't you usually choose which one to use?**
+
+??? success "Show answer"
+    A **filesystem** is the whole tree of **files** and **folders** (directories), and also a *format* deciding how bits are laid out on the SSD plus each file's name, size, owner, and timestamps. You don't choose it — the OS does, such as **APFS** on Mac, **NTFS** on Windows, or **ext4** on Linux.
+
+---
 **New words** (also in `resources/glossary.md`): firmware, BIOS, UEFI, bootloader, booting, kernel, driver, Secure Boot. (Plus the M2 basics: operating system, file, folder, filesystem, path, home folder, file manager.)
 
 **Source:** original — written for this course. No third-party text or figures; the diagrams are original.

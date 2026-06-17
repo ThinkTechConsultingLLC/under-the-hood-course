@@ -86,6 +86,36 @@ In your Codespace terminal: run `pwd` (where am I), `ls` (what's here), make a f
 </details>
 
 ---
+
+## Check yourself
+Lock in today's win — answer each in your head (or out loud), then reveal.
+
+**1. What's the difference between the terminal, the shell, and the prompt?**
+
+??? success "Show answer"
+    The **terminal** is the window you type into; the **shell** (commonly **bash**) is the program inside it that reads your commands and tells the OS to run them; the **prompt** is the text ending in `$` that means "ready, type something."
+
+**2. Can you break the computer by typing a command name you're not sure about?**
+
+??? success "Show answer"
+    No — **you can't break anything by typing a command name**. Type nonsense and you just get `command not found`; nothing happens and it waits. The **↑ (up-arrow)** recalls your last command and **Tab** auto-completes a half-typed name.
+
+**3. In `ls -l Documents`, which part is the command, which is the option, and which is the argument?**
+
+??? success "Show answer"
+    `ls` is the **command** (what makes something happen), `-l` is an **option/flag** (*how* to do it — long, detailed listing), and `Documents` is the **argument** (*what* to act on).
+
+**4. What's the difference between redirection (`>`) and a pipe (`|`)?**
+
+??? success "Show answer"
+    **Redirection (`>`)** sends a command's output into a **file** instead of the screen (`>` replaces, `>>` adds to the end). A **pipe (`|`)** sends one command's output straight into *another command* as its input, like `ls | wc -l`.
+
+**5. Why don't engineers memorize every command, and what makes the command line so powerful?**
+
+??? success "Show answer"
+    Nobody memorizes them all — you keep a **cheat-card** and look things up (`command --help` or `man command`). The power comes from **combining commands**: each does one small thing well, and you **snap them together** like Lego (with pipes and redirection) to count, filter, and transform.
+
+---
 **New words** (also in `resources/glossary.md`): pipe, redirection. (Plus the M3 basics: terminal, shell, prompt, command, argument, option/flag, path, current working directory, Tab completion.)
 
 **Source:** original — written for this course. The commands were verified by running them in the course's Linux (Codespaces) environment. The cheat-card draws on a public Linux-commands reference (linked there).

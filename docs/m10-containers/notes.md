@@ -56,6 +56,36 @@ In your Codespace (Docker is built in), `docker run hello-world` pulls a tiny im
 </details>
 
 ---
+
+## Check yourself
+Lock in today's win — answer each in your head (or out loud), then reveal.
+
+**1. What problem do containers solve, and what are the two properties that make them work?**
+
+??? success "Show answer"
+    They cure the "**works on my machine**" problem by packaging an app with everything it needs. The two properties are **isolation** (fenced off so it can't clash with other apps or disturb the host) and **portability** (build once, run anywhere — same box, same behaviour).
+
+**2. What's the difference between an image and a container?**
+
+??? success "Show answer"
+    An **image** is the **read-only template** (the recipe), while a **container** is a **running instance** made from that image (the cooked dish). From one image you can start **many** containers, and deleting a container leaves the image untouched.
+
+**3. How is a container different from a virtual machine?**
+
+??? success "Show answer"
+    A **VM** is a whole computer with its own **full guest OS** — gigabytes in size, ~a minute to start, with very strong isolation. A **container** is just the **OS fencing an ordinary process** (using **namespaces** and **cgroups**), so it shares the host OS, is megabytes in size, starts in ~a second, with lighter isolation.
+
+**4. What is a Dockerfile, and where are images stored and shared?**
+
+??? success "Show answer"
+    A **Dockerfile** is the plain-text **recipe** an image is built from. Images are stored and shared in a **registry** — the big public one is **Docker Hub**.
+
+**5. What is orchestration, and what is the dominant tool for it?**
+
+??? success "Show answer"
+    **Orchestration** is managing containers at scale — restarting crashed ones, scaling up under load, and rolling out updates across many servers. **Kubernetes** is the dominant **orchestrator**, acting like an autopilot for fleets of containers in the cloud.
+
+---
 **New words** (also in `resources/glossary.md`): container, image, Dockerfile, registry, Docker, Docker Hub, isolation, portability, port, orchestration, Kubernetes. (Callbacks: namespaces/cgroups (M4), VMs (M9), the cloud (M8).)
 
 **Source:** original — written for this course (concepts draw on Docker's docs and intro decks, re-expressed). The hello-world, nginx, and custom-image build were verified by running them in the course's Docker environment; diagrams are original.

@@ -58,6 +58,36 @@ In your Codespace terminal, `hostname` and `uname -srm` reveal it's a **Linux ma
 </details>
 
 ---
+
+## Check yourself
+Lock in today's win — answer each in your head (or out loud), then reveal.
+
+**1. In plain terms, what is "the cloud"?**
+
+??? success "Show answer"
+    The cloud is just **other people's computers that you rent over the internet** instead of owning them. They're real machines sitting in **data centers**, and you pay by usage.
+
+**2. What are the three flavors of cloud, and what do you manage in each?**
+
+??? success "Show answer"
+    **IaaS** — you rent a bare machine and install everything yourself (most control). **PaaS** — you bring just your code and they run the machine and OS (like your **Codespace**). **SaaS** — you just use the finished app in a browser and manage nothing (Gmail, Netflix).
+
+**3. Why did the cloud take over?**
+
+??? success "Show answer"
+    Four big reasons: **scale (elasticity)** to spin servers up and down on demand, **cost** since you pay only for what you use, **anywhere access** from any device, and **speed** — a new server in seconds instead of weeks.
+
+**4. What does putting your app in a nearby region do, and why?**
+
+??? success "Show answer"
+    Providers group data centers into **regions** (geographic locations). Putting your app in a region near your users means data travels less distance, which lowers **latency** — the delay before a response.
+
+**5. What's the catch with the cloud?**
+
+??? success "Show answer"
+    You don't own it, so there are trade-offs: **outages** take your service down too, **prices** can change, **vendor lock-in** makes switching hard, and **your data lives on someone else's computer** (privacy and security).
+
+---
 **New words** (also in `resources/glossary.md`): cloud computing, IaaS, PaaS, SaaS, region, latency, scalability. (Plus the M8 callbacks: data center (M1), CDN (M5).)
 
 **Source:** original — written for this course. The "your Codespace is a cloud computer" demonstration was verified by running it in the course's Codespaces environment; the diagrams are original.

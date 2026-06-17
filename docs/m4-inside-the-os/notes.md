@@ -68,6 +68,36 @@ In your Codespace: `nproc` (your cores), `free -h` (memory in use vs free), `top
 </details>
 
 ---
+
+## Check yourself
+Lock in today's win — answer each in your head (or out loud), then reveal.
+
+**1. You only have a few CPU cores, yet hundreds of programs seem to run at once. How does the OS pull this off?**
+
+??? success "Show answer"
+    The OS includes a **scheduler** that rapidly switches each core between processes, giving each a tiny slice of time thousands of times a second. It's so fast it *looks* simultaneous — that's **multitasking**. (True parallelism only happens up to your core count.)
+
+**2. What is a process, and what's the difference between it and a program sitting in storage?**
+
+??? success "Show answer"
+    A program in storage is just a file. The moment it runs, the OS turns it into a **process** — a running program with its own slice of CPU time and memory, plus an ID number called a **PID**.
+
+**3. What does the OS do when RAM fills up, and why does this make your computer feel slow?**
+
+??? success "Show answer"
+    It uses **swap** (virtual memory), parking some data on storage to free up RAM instead of crashing. Storage is much slower than RAM, which is *why* the computer crawls when memory runs low — but it keeps things alive.
+
+**4. When an app freezes, why don't you need to reboot the whole machine?**
+
+??? success "Show answer"
+    The **scheduler** keeps handing the other processes their turns, so one frozen app usually doesn't freeze everything. You can find that one process (with `ps` or `top`) and stop it with `kill <PID>`, and everything else keeps running.
+
+**5. What are the two OS features behind containers, and what does each one do?**
+
+??? success "Show answer"
+    **Namespaces** limit what a process can **see** (its own filesystem, process list, network), and **control groups (cgroups)** limit what a process can **use** (how much CPU and memory). That exact pair is how a **container** works.
+
+---
 **New words** (also in `resources/glossary.md`): scheduler, swap, namespace, control group (cgroup). (Plus the M4 basics: process, PID, multitasking, permissions, owner/group/world, superuser, daemon.)
 
 **Source:** original — written for this course. Commands were verified by running them in the course's Linux (Codespaces) environment; the diagrams are original.

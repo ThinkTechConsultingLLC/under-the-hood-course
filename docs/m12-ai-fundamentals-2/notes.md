@@ -58,6 +58,36 @@ In the lab you'll paste a sentence into a **token visualizer** and see the chunk
 </details>
 
 ---
+
+## Check yourself
+Lock in today's win — answer each in your head (or out loud), then reveal.
+
+**1. At its core, what is the one thing an LLM does?**
+
+??? success "Show answer"
+    It does **next-word (next-token) prediction**: given some text, it **guesses the most likely next chunk**, adds it, and repeats. It's **autocomplete turned up to eleven**.
+
+**2. What is a token, and what is the context window?**
+
+??? success "Show answer"
+    A **token** is a small chunk of text the model predicts one at a time (a common word is one token; rare words get split). The **context window** is how many tokens it can hold in view at once — go past it and the earliest text "falls out of sight."
+
+**3. Why does an LLM "hallucinate," and what should you do about it?**
+
+??? success "Show answer"
+    It predicts **plausible** text and has **no built-in sense of true vs false** — so when it doesn't know, it invents something that sounds right (a **hallucination**). Always **verify facts** before relying on them.
+
+**4. Why do prompts matter so much?**
+
+??? success "Show answer"
+    Because the model is **continuing your text**, what you give it steers everything — a vague prompt gets a vague answer. **Prompting** is the skill of setting up the text so the most likely continuation is the one you want.
+
+**5. Besides hallucination, what other rules guide responsible use?**
+
+??? success "Show answer"
+    **Don't paste secrets** (passwords or confidential data) into a chatbot, **mind bias and fairness** for high-stakes decisions about people, **be honest** about when AI wrote something, and remember these models have real **energy and cost**.
+
+---
 **New words** (also in `resources/glossary.md`): token, next-token prediction, prompt (to an LLM), context window, hallucination, training cutoff.
 
 **Source:** original — written for this course. No third-party text or figures; the diagram is original. (The lab uses a public chatbot such as claude.ai and a token-visualizer tool.)

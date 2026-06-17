@@ -67,6 +67,36 @@ In your Codespace: `dig example.com` (watch the name become an IP), then `curl -
 </details>
 
 ---
+
+## Check yourself
+Lock in today's win — answer each in your head (or out loud), then reveal.
+
+**1. What's the difference between the internet and the web?**
+
+??? success "Show answer"
+    The **internet** is the global network of networks — the "roads" connecting all the computers. The **web** is just one thing that runs on the internet: websites and pages. Email, video calls, and game servers ride the same internet too.
+
+**2. When you type a name like `example.com`, what turns that name into a number the computer can reach?**
+
+??? success "Show answer"
+    **DNS** (Domain Name System) — the internet's phone book. It turns the *name* into the **IP address** (like `172.66.147.243`) that messages are actually sent to.
+
+**3. What does the padlock in your address bar actually mean?**
+
+??? success "Show answer"
+    It means **HTTPS** is on — plain **HTTP** wrapped in **TLS encryption**, which scrambles the connection so only you and the server can read it. A trusted **TLS certificate** also proves the server really is who it claims to be.
+
+**4. Describe the request → response loop between client and server.**
+
+??? success "Show answer"
+    Your device is the **client** and sends a **request** ("please send me this page"). A **server** sends back a **response**, starting with a status like **`200`** (success). That loop, spoken in **HTTP**, is the heartbeat of the web.
+
+**5. Why does a website load fast whether you're in Lagos or London?**
+
+??? success "Show answer"
+    Because of a **CDN** (content delivery network) — copies of the site cached on many servers worldwide, so you connect to a *nearby* one instead of a distant origin. `example.com` is actually served by **Cloudflare**, a CDN.
+
+---
 **New words** (also in `resources/glossary.md`): HTTPS, TLS, TLS certificate, CDN. (Plus the M5 basics: internet, IP address, DNS, client, server, request/response, HTTP, packet, router, port.)
 
 **Source:** original — written for this course. Commands and the certificate inspection were verified by running them against a live site in the course's Linux (Codespaces) environment; the diagrams are original.

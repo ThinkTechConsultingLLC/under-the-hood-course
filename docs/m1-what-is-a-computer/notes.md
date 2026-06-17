@@ -91,6 +91,36 @@ Open your computer's **About** screen (Mac: Apple menu → About This Mac; Windo
 </details>
 
 ---
+
+## Check yourself
+Lock in today's win — answer each in your head (or out loud), then reveal.
+
+**1. In one sentence, what makes a computer "general-purpose"?**
+
+??? success "Show answer"
+    The *same* hardware can do completely different jobs — calculator, camera, game, AI — just by running different **software**. Only the instructions change, not the physical parts.
+
+**2. A spec says "8 cores at 3.2 GHz." What do the two numbers mean?**
+
+??? success "Show answer"
+    **8 cores** = eight workers that can each do something at the same time (real parallel work). **3.2 GHz** = each core takes ~3.2 billion basic steps per second — how fast each worker goes.
+
+**3. A laptop lists "16 GB of memory" and "512 GB of storage." Which one forgets when the power goes off, and why?**
+
+??? success "Show answer"
+    The **16 GB RAM** forgets — it's fast, short-term working space wiped when power is lost (**RAM forgets**). The **512 GB storage** (SSD/HDD) keeps your files with the power off (**storage remembers**). Both are "memory," but they do opposite jobs.
+
+**4. Why does an SSD make a computer feel so much faster than an old HDD?**
+
+??? success "Show answer"
+    An **HDD** has spinning platters and a moving arm (mechanical, slow). An **SSD** has no moving parts — just flash chips — so it reads and writes far faster and is more durable. That's why SSD machines boot in seconds and apps open instantly.
+
+**5. Why does modern AI run on GPUs instead of CPUs?**
+
+??? success "Show answer"
+    A **CPU** has a few powerful cores — great at one complicated thing after another. A **GPU** has *thousands* of small cores that do the *same simple math across a huge pile of numbers all at once* — **parallelism**. Training a neural network is exactly that shape of work, so GPUs are ideal (and why data centers are full of them).
+
+---
 **New words** (also in `resources/glossary.md`): CPU core, clock speed (GHz), thread, GPU, parallelism, SSD, HDD, transistor, data center. (Plus the M1 basics: hardware, software, CPU, RAM, storage, bit, byte, input/output/process.)
 
 **Source:** original — written for this course. No third-party text or figures; the diagrams are original.
