@@ -10,7 +10,7 @@ A **container** bundles an application together with its dependencies and seals 
 - **Isolation** — fenced off; it can't clash with other apps or disturb the host.
 - **Portability** — *build once, run anywhere*: your laptop, a server, the cloud — same box, same behaviour.
 
-Like a shipping container: standard on the outside, so any ship, truck, or crane handles it the same, whatever's inside. <!-- HUMAN: review/replace the shipping-container analogy. -->
+Like a shipping container: standard on the outside, so any ship, truck, or crane handles it the same, whatever's inside.
 
 ## Images vs containers (the one to get right)
 - An **image** is the **read-only template** — the app and all its ingredients packaged together (like a recipe).
@@ -41,7 +41,7 @@ So a VM is a whole computer; a container is a fenced-off process. In the cloud (
 The same image runs the same on a developer's laptop and in production, deploys in seconds, and packs many-per-server efficiently. That consistency is why containers became **the** standard way to ship software.
 
 ## Orchestration: containers at scale (Kubernetes)
-Running *one* container is easy. Running *hundreds* across many servers — restarting crashed ones, scaling up under load, rolling out updates — needs an **orchestrator**. **Kubernetes** is the dominant one: think of it as the autopilot for fleets of containers in the cloud. You won't run it here, but you should know the name and what it's for — it's how M8's cloud runs apps at scale. <!-- HUMAN: review/replace the "autopilot" analogy. -->
+Running *one* container is easy. Running *hundreds* across many servers — restarting crashed ones, scaling up under load, rolling out updates — needs an **orchestrator**. **Kubernetes** is the dominant one: think of it as the autopilot for fleets of containers in the cloud. You won't run it here, but you should know the name and what it's for — it's how M8's cloud runs apps at scale.
 
 ## See it yourself
 In your Codespace (Docker is built in), `docker run hello-world` pulls a tiny image from Docker Hub and runs it; `docker run -p 8080:80 nginx` runs a **real web server** you can open in a browser; and a two-line **Dockerfile** lets you build and run **your own** image. That's the whole lifecycle, in the lab.

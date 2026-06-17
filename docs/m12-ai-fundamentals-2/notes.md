@@ -5,7 +5,7 @@ In M11 you watched a model learn from examples. An **LLM** — the thing behind 
 ## An LLM is a next-word predictor
 At heart an LLM does just one thing: given some text, **guess the most likely next chunk of text** — add it, then guess again, and again. That's it. Trained on so much writing (using the transformers and GPUs from M11), those guesses string together into fluent, genuinely useful answers.
 
-It's **autocomplete turned up to eleven**. <!-- HUMAN: review/replace the "autocomplete on steroids" analogy. -->
+It's **autocomplete turned up to eleven**.
 
 ## Tokens: the pieces it predicts
 LLMs don't think in letters or whole words — they work in **tokens**: small chunks of text. A common word is one token; a long or rare word gets split, e.g. `unbelievable` → `un` + `believ` + `able`. The model predicts **one token at a time**.

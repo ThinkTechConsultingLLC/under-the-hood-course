@@ -4,7 +4,6 @@
 > seeing your desktop? Or saved a file and had no idea where it went? Today both mysteries end:
 > you'll trace your computer from cold metal to login, and learn to put your hand on *any* file
 > on purpose.
-> <!-- HUMAN: review/replace this hook. The instructor's voice and relatability are the whole point. -->
 
 **Today's win:** you can explain what the operating system does, trace how your computer **boots** (power → firmware → bootloader → OS), and find any file on your machine *on purpose* by reading its path.
 

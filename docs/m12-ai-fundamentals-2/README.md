@@ -3,7 +3,6 @@
 > You've used a chatbot. Today you'll understand what's *actually* happening when it answers — the one
 > simple trick behind it — and why something so impressive will look you in the eye and make up a fact.
 > Then you'll tie everything you've learned, M1 to M12, into one project to call your own.
-> <!-- HUMAN: review/replace this hook. The instructor's voice and relatability are the whole point. -->
 
 **Today's win:** you can explain why LLMs are brilliant *and* why they confidently make things up (and how to use them responsibly) — and you've kicked off a capstone that spans the whole modern stack.
 

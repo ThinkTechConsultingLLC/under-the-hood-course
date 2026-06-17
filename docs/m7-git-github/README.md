@@ -3,7 +3,6 @@
 > Somewhere on your computer is a file called something like `final_v2_FINAL_actually-final`. Today
 > you learn the tool that ends that forever — a time machine for your work — and the cloud home where
 > the entire software world keeps its code. By the end you'll have your own project on GitHub.
-> <!-- HUMAN: review/replace this hook. The instructor's voice and relatability are the whole point. -->
 
 **Today's win:** you create a Git repo, save labelled snapshots (commits), view its history, branch to try something safely, and push your project up to **GitHub**.
 

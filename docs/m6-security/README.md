@@ -4,7 +4,6 @@
 > dread with a clear picture: who's actually after your stuff, how they really get in (hint: it's
 > usually not code), and the handful of habits that stop the vast majority of attacks. You'll even
 > watch a password turn into an unbreakable hash.
-> <!-- HUMAN: review/replace this hook. The instructor's voice and relatability are the whole point. -->
 
 **Today's win:** you can describe a basic threat model, explain how passwords/encryption/2FA actually protect you, spot a phishing attempt, and name the few habits that stop most attacks.
 

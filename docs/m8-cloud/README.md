@@ -4,7 +4,6 @@
 > sky. Today you'll see it's something much simpler and more concrete: *other people's computers,
 > rented over the internet.* And the best proof is that you've been using one all course — your
 > Codespace.
-> <!-- HUMAN: review/replace this hook. The instructor's voice and relatability are the whole point. -->
 
 **Today's win:** you can explain what "the cloud" actually is, tell IaaS / PaaS / SaaS apart with real examples, say why nearly everything runs there now (and the catch) — and prove your Codespace *is* a cloud computer.
 

@@ -23,14 +23,14 @@ flowchart LR
 Input → process → output, with RAM as the fast working space and storage as the keep-forever space. Every part below has one of these jobs.
 
 ## The CPU — the worker (and what "cores" and "GHz" mean)
-The **CPU** (central processing unit, or "processor") does the actual work: it reads instructions and performs arithmetic and logic, billions of times a second. Think of it as the worker who handles every task. <!-- HUMAN: review/replace the "worker" analogy. -->
+The **CPU** (central processing unit, or "processor") does the actual work: it reads instructions and performs arithmetic and logic, billions of times a second. Think of it as the worker who handles every task.
 
 Two numbers describe a modern CPU:
 
 - **Clock speed (GHz)** — how many basic steps it takes per second. *2.4 GHz ≈ 2.4 billion ticks per second.* Higher clock = faster at each step.
 - **Cores** — a modern CPU isn't one worker but several, called **cores**, each able to work independently. A **4-core** or **8-core** chip can genuinely do that many things *at the same time*. (You'll often also see "threads" — a trick that lets each core juggle two tasks, so an 8-core chip may show **16 threads**.)
 
-So "8 cores at 2.4 GHz" means eight workers, each taking ~2.4 billion steps a second. More cores is why your computer stays smooth with many apps open — and it's the same idea, taken to an extreme, that powers GPUs and AI below. *(Analogy: cores are cooks in a kitchen; clock speed is how fast each cook works.)* <!-- HUMAN: review/replace the "cooks" analogy. -->
+So "8 cores at 2.4 GHz" means eight workers, each taking ~2.4 billion steps a second. More cores is why your computer stays smooth with many apps open — and it's the same idea, taken to an extreme, that powers GPUs and AI below. *(Analogy: cores are cooks in a kitchen; clock speed is how fast each cook works.)*
 
 ## RAM — the working memory (the desk)
 **RAM** is the computer's fast, short-term memory: it holds whatever you're doing *right now* — open tabs, the app in front of you. It's wiped clean the moment power is lost. More RAM means more can be open at once before things slow down. **RAM forgets.**

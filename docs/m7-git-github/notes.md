@@ -63,4 +63,3 @@ In your Codespace you'll run the whole local flow — `git init`, `git add`, `gi
 **New words** (also in `resources/glossary.md`): version control, Git, GitHub, repository (repo), commit, branch, merge, remote, clone, push, pull.
 
 **Source:** original — written for this course. The full local Git flow (init → commit → log → branch → merge) was verified by running it in the course's Codespaces environment; the diagrams are original.
-<!-- HUMAN: review/replace the "time machine" and "final_v2_FINAL" framings for instructor voice. -->

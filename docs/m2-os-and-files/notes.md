@@ -10,7 +10,7 @@ The **operating system (OS)** is the master program sitting between you and the 
 - **Files** — organizes everything you save (the filesystem, below).
 - **Users** — keeps different people's stuff separate and protected (M4 / M6).
 
-You already run one: **Windows, macOS, Linux, or ChromeOS** — and your phone runs **Android or iOS**. Useful modern fact: almost all of these *except Windows* are **Unix-like** under the hood (macOS, Linux, Android, and iOS share that family), which is why the command-line skills in M3 transfer across most of them. Think of the OS as an air-traffic controller: you never see it, but nothing moves safely without it. <!-- HUMAN: review/replace the "air-traffic controller" analogy. -->
+You already run one: **Windows, macOS, Linux, or ChromeOS** — and your phone runs **Android or iOS**. Useful modern fact: almost all of these *except Windows* are **Unix-like** under the hood (macOS, Linux, Android, and iOS share that family), which is why the command-line skills in M3 transfer across most of them. Think of the OS as an air-traffic controller: you never see it, but nothing moves safely without it.
 
 ## How your computer boots (the part nobody explains)
 Software doesn't magically appear when you press power. There's a chain, and knowing it demystifies a lot:

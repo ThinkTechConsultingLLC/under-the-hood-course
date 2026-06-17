@@ -3,7 +3,6 @@
 > You type a name, hit Enter, and a page from a computer on the other side of the planet appears
 > in under a second. It feels like magic. Today we pull back the curtain and follow that journey
 > step by step — the address lookup, the request, the padlock — and you'll do every step yourself.
-> <!-- HUMAN: review/replace this hook. The instructor's voice and relatability are the whole point. -->
 
 **Today's win:** you can trace exactly what happens when you open a website — name → IP (**DNS**), the **request → 200 response**, and what the **padlock (HTTPS)** actually means — and you can decode a real site's security certificate.
 

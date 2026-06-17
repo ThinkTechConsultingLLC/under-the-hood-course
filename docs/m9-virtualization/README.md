@@ -3,7 +3,6 @@
 > How does one server in a data center turn into 50 rentable cloud computers? And what's *really*
 > underneath the containers you'll build next module? Same answer: **virtualization** — making one
 > computer act like many. Today you'll see the layer that quietly powers both the cloud and containers.
-> <!-- HUMAN: review/replace this hook. The instructor's voice and relatability are the whole point. -->
 
 **Today's win:** you can explain what a virtual machine is, what a hypervisor does, how virtualization made the cloud possible, and — concretely — how a container differs from a VM.
 

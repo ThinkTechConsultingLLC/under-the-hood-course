@@ -2,7 +2,6 @@
 
 You type a name, hit Enter, and a page from a computer on the other side of the planet appears in under a second. This module traces *exactly* what happens in those moments — the address lookup (**DNS**), the **request and response**, the padlock (**HTTPS**), and why it's all so fast (**CDNs**). By the end, the web isn't magic — it's a sequence you can name.
 
-<!-- HUMAN: review/replace the everyday analogies used below — DNS = "phone book", HTTP = "postcard" vs HTTPS = sealed letter, TLS certificate = "ID card", internet = "roads", port = numbered "door". -->
 
 
 ## Internet vs web — not the same thing

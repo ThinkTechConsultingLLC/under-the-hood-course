@@ -30,7 +30,7 @@ The **machine-learning** way flips it: you **show** the computer thousands of la
 - **Training** — the *learning* phase: the model sees many examples and adjusts itself to get better. Slow, done occasionally, and the expensive part.
 - **Inference** — the *using* phase: you hand the trained model something new and it makes a prediction. Fast, and happens every time you use it.
 
-Like **studying for an exam** (training) vs **answering on exam day** (inference). <!-- HUMAN: review/replace the exam analogy. -->
+Like **studying for an exam** (training) vs **answering on exam day** (inference).
 
 ## Neural networks, without the math
 A **neural network** is a big web of simple connected units ("neurons"). Each connection has a strength — a **weight**. Training is a loop:

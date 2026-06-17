@@ -28,7 +28,7 @@ flowchart TB
   S -.->|more control, more responsibility| P -.-> I
 ```
 
-The trade-off runs one way: **SaaS is most convenient, IaaS gives most control** — pick the level that matches how much you want to manage. <!-- HUMAN: review/replace the "empty apartment" analogy. -->
+The trade-off runs one way: **SaaS is most convenient, IaaS gives most control** — pick the level that matches how much you want to manage.
 
 ## Why the cloud took over
 - **Scale (elasticity):** spin up 1,000 servers for an hour during a rush, then release them. Handle a traffic spike without owning a warehouse of hardware.

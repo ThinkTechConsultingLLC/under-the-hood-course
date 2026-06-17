@@ -4,7 +4,6 @@
 > be — we'll open the hood (no wires, no risk) and you'll not only name the parts, you'll read
 > your own computer's specs like a pro and understand *why the same kind of chip that draws your
 > games is what trains AI*.
-> <!-- HUMAN: review/replace this hook. The instructor's voice and relatability are the whole point. -->
 
 **Today's win:** you can read your own computer's specs — processor (cores + GHz), memory, storage (and whether it's an SSD), and graphics (GPU) — say what each part does, and explain why AI runs on GPUs.
 

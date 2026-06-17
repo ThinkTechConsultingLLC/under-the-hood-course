@@ -85,4 +85,3 @@ Then, on your own accounts: confirm **2FA is on for your email**, and skim your 
 **New words** (also in `resources/glossary.md`): threat model, authentication, hash, two-factor authentication (2FA), password manager, encryption, phishing, least privilege, patching.
 
 **Source:** original — written for this course. The hashing demonstration was verified by running it in the course's Linux (Codespaces) environment; the diagrams are original.
-<!-- HUMAN: review/replace the everyday framings (master key, closing doors, blast radius, brick) for instructor voice. -->

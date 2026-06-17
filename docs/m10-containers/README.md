@@ -3,7 +3,6 @@
 > "It works on my machine" is the oldest groan in software. Today you end it: you'll run a real app in
 > a sealed box that runs the same anywhere, then build and ship your *own* box. You've seen the engine
 > (M4's namespaces/cgroups) and the heavier VM (M9) — now you drive the thing that runs modern IT.
-> <!-- HUMAN: review/replace this hook. The instructor's voice and relatability are the whole point. -->
 
 **Today's win:** you run a real app in a container in one command, build your own image from a Dockerfile, and can explain why containers (light, portable) beat shipping a whole machine.
 

@@ -29,7 +29,7 @@ A **command** is a word that makes something happen. It usually takes:
 In `ls -l Documents`: `ls` is the command, `-l` is an option ("long, detailed listing"), `Documents` is the argument. Options can combine (`ls -la`) and many have long forms (`--all`).
 
 ## Finding your way: `pwd`, `ls`, `cd`
-Your files are a tree, and you're always standing *inside* one folder — the **current working directory**. Three commands are your eyes and feet: <!-- HUMAN: review/replace the "eyes and feet" analogy. -->
+Your files are a tree, and you're always standing *inside* one folder — the **current working directory**. Three commands are your eyes and feet:
 
 
 | Command | Means |
@@ -69,7 +69,7 @@ flowchart LR
   A["ls<br/>(list the files)"] -->|pipe| B["wc -l<br/>(count the lines)"] --> R["the number of files"]
 ```
 
-This is the whole philosophy: each command does **one** small thing well, and you **snap them together** like Lego to do big things — count, filter, transform. <!-- HUMAN: review/replace the "Lego" analogy. --> `ls /usr/bin | wc -l` tells you how many programs are installed; `ls -l | grep txt` lists only your `.txt` files. That composability is the root of modern automation.
+This is the whole philosophy: each command does **one** small thing well, and you **snap them together** like Lego to do big things — count, filter, transform. `ls /usr/bin | wc -l` tells you how many programs are installed; `ls -l | grep txt` lists only your `.txt` files. That composability is the root of modern automation.
 
 ## You look commands up — you don't memorize them
 Nobody memorizes every command. You keep a **cheat-card** and look things up (and `command --help` or `man command` explains any of them). The handful you'll actually use daily: `pwd`, `ls`, `cd`, `mkdir`, `cp`, `mv`, `rm`, `cat`, `grep`. Keep the **[Linux commands cheat-card](../resources/cheat-cards/linux-commands.md)** open while you work.

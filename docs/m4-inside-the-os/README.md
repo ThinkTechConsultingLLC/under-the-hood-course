@@ -4,7 +4,6 @@
 > a handful of cores, shuffling memory, and quietly enforcing who can touch what. Today we open
 > that hidden control room, take the controls — and discover the exact OS trick that powers
 > containers (you'll use it for real in M10).
-> <!-- HUMAN: review/replace this hook. The instructor's voice and relatability are the whole point. -->
 
 **Today's win:** you can see everything running on a machine, find the memory hog, stop a misbehaving process *without* rebooting, and read a file's permissions — and you can explain how the OS shares a few cores among hundreds of programs.
 

@@ -3,7 +3,6 @@
 > Everyone's talking about AI, and most explanations either dumb it down to nonsense or bury you in
 > math. Today, neither: you'll sort out what the words actually mean, see *why* AI suddenly got so
 > good — and then *teach a computer something yourself* and watch it learn, live, in your browser.
-> <!-- HUMAN: review/replace this hook. The instructor's voice and relatability are the whole point. -->
 
 **Today's win:** you can explain AI vs machine learning vs deep learning vs LLMs, say why the current AI wave happened (data + GPUs + transformers), and you've **watched a model learn** — and seen how its examples (and their bias) shape it.
 

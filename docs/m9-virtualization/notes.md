@@ -45,7 +45,7 @@ flowchart LR
 | Start time | ~a minute (it boots) | ~a second |
 | Isolation | very strong (whole fake machine) | lighter (fenced-off process) |
 
-So: **a VM is a whole separate computer; a container is just a fenced-off process sharing the host's OS.** A useful picture: VMs are separate **houses** (each with its own foundation and plumbing); containers are **apartments** in one building (sharing the structure). <!-- HUMAN: review/replace the houses/apartments analogy. -->
+So: **a VM is a whole separate computer; a container is just a fenced-off process sharing the host's OS.** A useful picture: VMs are separate **houses** (each with its own foundation and plumbing); containers are **apartments** in one building (sharing the structure).
 
 Modern reality: it's often **both** — containers running *inside* VMs in the cloud, combining strong isolation with light, fast deployment.
 

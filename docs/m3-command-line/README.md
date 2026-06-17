@@ -4,7 +4,6 @@
 > wizard. Today you become that person (minus the dramatic music). The "scary black screen"
 > becomes the fastest, most precise way you own to tell a computer what to do — and you'll even
 > learn to snap commands together to do things a mouse can't.
-> <!-- HUMAN: review/replace this hook. The instructor's voice and relatability are the whole point. -->
 
 **Today's win:** in a real Linux terminal, you move around, create/copy/rename/delete files, run programs, and **chain commands together** — all by typing.
 
