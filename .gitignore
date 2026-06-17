@@ -1,5 +1,12 @@
-# MkDocs build output
+# MkDocs build output + local encryption artifacts
 site/
+site_pub/
+site_enc/
+_enc/
+.staticrypt.json
+
+# Local tool config (not for the repo)
+.claude/
 
 # Python virtual environments & caches
 .venv/

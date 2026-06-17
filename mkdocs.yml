@@ -6,6 +6,10 @@ docs_dir: course-01-computers-and-ai
 site_dir: site
 use_directory_urls: true
 
+# Search is disabled on purpose: the site is encrypted (StatiCrypt) for a passphrase-gated
+# public deploy, and a search index would leak page text even when pages are locked.
+plugins: []
+
 theme:
   name: material
   features:
