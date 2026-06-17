@@ -23,35 +23,35 @@ You do **not** need to understand GitHub to take this course.
 
 ## 📚 The course — full breakdown (12 modules)
 
+Every module title links to its **Overview** on the live site; each row also links the **Notes** (the in-depth read) and the **Lab** (the hands-on). Source for all of it lives in [`docs/`](docs/).
+
 ### Part A — The machine
-| # | Module | What you'll be able to do |
-|---|--------|---------------------------|
-| **M1** | What a computer really is | Read your own specs (cores, RAM, SSD, GPU) and explain *why AI needs GPUs* |
-| **M2** | The OS, booting & the filesystem | Trace power-on → desktop, and find any file on purpose |
-| **M3** | The command line | Move around and get things done by typing — and chain commands together |
-| **M4** | Inside the OS | See and control running programs; meet the trick behind containers |
+| # | Module | What you'll be able to do | Pages |
+|---|--------|---------------------------|-------|
+| **M1** | [What a computer really is](https://thinktechconsultingllc.github.io/under-the-hood-course/m1-what-is-a-computer/) | Read your own specs (cores, RAM, SSD, GPU) and explain *why AI needs GPUs* | [Notes](https://thinktechconsultingllc.github.io/under-the-hood-course/m1-what-is-a-computer/notes/) · [Lab](https://thinktechconsultingllc.github.io/under-the-hood-course/m1-what-is-a-computer/lab/lab/) |
+| **M2** | [The OS, booting & the filesystem](https://thinktechconsultingllc.github.io/under-the-hood-course/m2-os-and-files/) | Trace power-on → desktop, and find any file on purpose | [Notes](https://thinktechconsultingllc.github.io/under-the-hood-course/m2-os-and-files/notes/) · [Lab](https://thinktechconsultingllc.github.io/under-the-hood-course/m2-os-and-files/lab/lab/) |
+| **M3** | [The command line](https://thinktechconsultingllc.github.io/under-the-hood-course/m3-command-line/) | Move around and get things done by typing — and chain commands together | [Notes](https://thinktechconsultingllc.github.io/under-the-hood-course/m3-command-line/notes/) · [Lab](https://thinktechconsultingllc.github.io/under-the-hood-course/m3-command-line/lab/lab/) |
+| **M4** | [Inside the OS](https://thinktechconsultingllc.github.io/under-the-hood-course/m4-inside-the-os/) | See and control running programs; meet the trick behind containers | [Notes](https://thinktechconsultingllc.github.io/under-the-hood-course/m4-inside-the-os/notes/) · [Lab](https://thinktechconsultingllc.github.io/under-the-hood-course/m4-inside-the-os/lab/lab/) |
 
 ### Part B — Connected, and how people really work
-| # | Module | What you'll be able to do |
-|---|--------|---------------------------|
-| **M5** | Networking & the web | Trace a website end-to-end: DNS → request → the padlock (HTTPS) |
-| **M6** | Security & privacy | Build a simple threat model and the habits that stop most attacks |
-| **M7** | Version control: Git & GitHub | Track every change, branch safely, and push your work to GitHub |
-| **M8** | The Cloud | Understand what "the cloud" really is, and why everything runs there |
+| # | Module | What you'll be able to do | Pages |
+|---|--------|---------------------------|-------|
+| **M5** | [Networking & the web](https://thinktechconsultingllc.github.io/under-the-hood-course/m5-networking-and-web/) | Trace a website end-to-end: DNS → request → the padlock (HTTPS) | [Notes](https://thinktechconsultingllc.github.io/under-the-hood-course/m5-networking-and-web/notes/) · [Lab](https://thinktechconsultingllc.github.io/under-the-hood-course/m5-networking-and-web/lab/lab/) |
+| **M6** | [Security & privacy](https://thinktechconsultingllc.github.io/under-the-hood-course/m6-security/) | Build a simple threat model and the habits that stop most attacks | [Notes](https://thinktechconsultingllc.github.io/under-the-hood-course/m6-security/notes/) · [Lab](https://thinktechconsultingllc.github.io/under-the-hood-course/m6-security/lab/lab/) |
+| **M7** | [Version control: Git & GitHub](https://thinktechconsultingllc.github.io/under-the-hood-course/m7-git-github/) | Track every change, branch safely, and push your work to GitHub | [Notes](https://thinktechconsultingllc.github.io/under-the-hood-course/m7-git-github/notes/) · [Lab](https://thinktechconsultingllc.github.io/under-the-hood-course/m7-git-github/lab/lab/) |
+| **M8** | [The Cloud](https://thinktechconsultingllc.github.io/under-the-hood-course/m8-cloud/) | Understand what "the cloud" really is, and why everything runs there | [Notes](https://thinktechconsultingllc.github.io/under-the-hood-course/m8-cloud/notes/) · [Lab](https://thinktechconsultingllc.github.io/under-the-hood-course/m8-cloud/lab/lab/) |
 
 ### Part C — Packaging & running software anywhere
-| # | Module | What you'll be able to do |
-|---|--------|---------------------------|
-| **M9** | Virtualization & VMs | Understand how one computer pretends to be many |
-| **M10** | Containers | Run a real app in a container — and build and ship your own |
+| # | Module | What you'll be able to do | Pages |
+|---|--------|---------------------------|-------|
+| **M9** | [Virtualization & VMs](https://thinktechconsultingllc.github.io/under-the-hood-course/m9-virtualization/) | Understand how one computer pretends to be many | [Notes](https://thinktechconsultingllc.github.io/under-the-hood-course/m9-virtualization/notes/) · [Lab](https://thinktechconsultingllc.github.io/under-the-hood-course/m9-virtualization/lab/lab/) |
+| **M10** | [Containers](https://thinktechconsultingllc.github.io/under-the-hood-course/m10-containers/) | Run a real app in a container — and build and ship your own | [Notes](https://thinktechconsultingllc.github.io/under-the-hood-course/m10-containers/notes/) · [Lab](https://thinktechconsultingllc.github.io/under-the-hood-course/m10-containers/lab/lab/) |
 
 ### Part D — AI
-| # | Module | What you'll be able to do |
-|---|--------|---------------------------|
-| **M11** | AI Fundamentals I | Explain AI vs ML vs deep learning vs LLMs — and watch a model learn |
-| **M12** | AI Fundamentals II + Capstone | Understand why LLMs are brilliant *and* why they make things up — then tie it all together |
-
-Each module has an **Overview** (the plan), **Notes** (the in-depth read), and a **Lab** (the hands-on).
+| # | Module | What you'll be able to do | Pages |
+|---|--------|---------------------------|-------|
+| **M11** | [AI Fundamentals I](https://thinktechconsultingllc.github.io/under-the-hood-course/m11-ai-fundamentals-1/) | Explain AI vs ML vs deep learning vs LLMs — and watch a model learn | [Notes](https://thinktechconsultingllc.github.io/under-the-hood-course/m11-ai-fundamentals-1/notes/) · [Lab](https://thinktechconsultingllc.github.io/under-the-hood-course/m11-ai-fundamentals-1/lab/lab/) |
+| **M12** | [AI Fundamentals II + Capstone](https://thinktechconsultingllc.github.io/under-the-hood-course/m12-ai-fundamentals-2/) | Understand why LLMs are brilliant *and* why they make things up — then tie it all together | [Notes](https://thinktechconsultingllc.github.io/under-the-hood-course/m12-ai-fundamentals-2/notes/) · [Lab](https://thinktechconsultingllc.github.io/under-the-hood-course/m12-ai-fundamentals-2/lab/lab/) |
 
 ---
 
