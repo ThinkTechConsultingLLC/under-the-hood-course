@@ -21,3 +21,6 @@ __pycache__/
 
 # Instructor answer keys — kept local, NOT in the public repo
 **/solution/
+
+# macOS
+.DS_Store
