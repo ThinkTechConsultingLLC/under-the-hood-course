@@ -18,3 +18,6 @@ __pycache__/
 # (TLCL = CC BY-NC-ND, INFN deck = CC BY-NC-SA, others all-rights-reserved).
 # Our notes re-express these in original words; the source PDFs must NOT be committed.
 *.pdf
+
+# Instructor answer keys — kept local, NOT in the public repo
+**/solution/
