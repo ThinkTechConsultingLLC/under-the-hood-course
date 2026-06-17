@@ -72,7 +72,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.PAGES_DEPLOY_TOKEN }}
-          external_repository: TIN-TECH-OWNER/PUBLIC-PAGES-REPO   # TODO: set to owner/repo
+          external_repository: ThinkTechConsultingLLC/under-the-hood-site
           publish_dir: ./site
           publish_branch: gh-pages
           # cname: courses.tintech.example          # optional: a custom domain
