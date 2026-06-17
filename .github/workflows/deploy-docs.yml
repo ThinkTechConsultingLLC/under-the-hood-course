@@ -1,19 +1,12 @@
-name: Deploy course site (encrypted, Option B)
+name: Deploy course site
 
-# This workflow lives in the PRIVATE source repo. It builds the MkDocs site, encrypts every
-# page with StatiCrypt (passphrase-gated), and PUSHES ONLY THE ENCRYPTED HTML to a SEPARATE
-# PUBLIC repo, which serves it via GitHub Pages. The markdown source never becomes public.
+# Lives in the PRIVATE source repo. Builds the MkDocs site and publishes it (public, no
+# passphrase) to the separate PUBLIC repo, which serves it via GitHub Pages.
 #
 # ── One-time setup ───────────────────────────────────────────────────────────────────────
-#   1. Create a PUBLIC repo under Tin Tech Consulting for the site (e.g. "under-the-hood-site").
-#   2. Create a deploy token with write access to that public repo (a fine-grained PAT, or a
-#      classic PAT with "repo" scope). Add it to THIS repo as the secret  PAGES_DEPLOY_TOKEN.
-#   3. Add the course PIN as the secret  SITE_PASSPHRASE  (Settings → Secrets → Actions).
-#   4. Fill in `external_repository` below (owner/public-repo).
-#   5. In the PUBLIC repo: Settings → Pages → deploy from branch  gh-pages  (root).
-#
-# ── Rotate the PIN (e.g. monthly) ────────────────────────────────────────────────────────
-#   Update the SITE_PASSPHRASE secret, then re-run this workflow (Actions → Run workflow).
+#   1. PUBLIC site repo exists (ThinkTechConsultingLLC/under-the-hood-site).
+#   2. Secret PAGES_DEPLOY_TOKEN = a PAT with write access to that public repo.
+#   3. In the PUBLIC repo: Settings → Pages → deploy from branch  gh-pages  (root).
 
 on:
   push:
@@ -28,7 +21,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-encrypt-deploy:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -37,38 +30,10 @@ jobs:
         with:
           python-version: "3.x"
       - run: pip install -r requirements-docs.txt
-      - run: mkdocs build --strict          # → ./site (plaintext build; never published as-is)
+      - run: mkdocs build --strict
+      - run: touch site/.nojekyll
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-
-      - name: Encrypt the site with StatiCrypt
-        env:
-          # StatiCrypt reads the passphrase from this env var, so it never appears in logs.
-          STATICRYPT_PASSWORD: ${{ secrets.SITE_PASSPHRASE }}
-        run: |
-          if [ -z "$STATICRYPT_PASSWORD" ]; then
-            echo "::error::SITE_PASSPHRASE secret is not set — refusing to publish an unprotected site."
-            exit 1
-          fi
-          # Encrypt every HTML page recursively into ./_enc/site/, then overlay the encrypted
-          # HTML back onto ./site (StatiCrypt only touches HTML, so CSS/JS/images are kept).
-          npx -y staticrypt@3 site -r -d _enc --short
-          cp -r _enc/site/. site/
-          rm -rf _enc
-
-      - name: Sanity check — no plaintext leaked
-        run: |
-          if grep -rqs "handful of parts doing simple jobs" site; then
-            echo "::error::Plaintext content found in the built site — encryption did not cover everything."
-            exit 1
-          fi
-          touch site/.nojekyll
-          echo "OK: spot-check found no plaintext."
-
-      # Push the ENCRYPTED ./site to the separate PUBLIC Pages repo.
-      - name: Publish encrypted site to the public Pages repo
+      - name: Publish site to the public Pages repo
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.PAGES_DEPLOY_TOKEN }}

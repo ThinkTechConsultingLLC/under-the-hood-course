@@ -2,9 +2,6 @@
 
 Welcome! 👋 You're looking at the home of **Course 01 — How Computers & AI Really Work**. This page is a 2-minute map so you always know where you are and where to go next.
 
-## Getting in
-This site is **passphrase-protected**. You've already entered the **PIN** your instructor shared — that's all it takes. The PIN **changes monthly**, so if the site ever asks again and your old one doesn't work, ask your instructor for the new one.
-
 ## Finding your way — the menu
 Everything is in the **menu on the left** (on a phone, tap the **☰** icon top-left). It's the whole course, in order:
 
