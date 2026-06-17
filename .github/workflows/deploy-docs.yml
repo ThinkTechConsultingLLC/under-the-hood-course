@@ -1,12 +1,7 @@
 name: Deploy course site
 
-# Lives in the PRIVATE source repo. Builds the MkDocs site and publishes it (public, no
-# passphrase) to the separate PUBLIC repo, which serves it via GitHub Pages.
-#
-# ── One-time setup ───────────────────────────────────────────────────────────────────────
-#   1. PUBLIC site repo exists (ThinkTechConsultingLLC/under-the-hood-site).
-#   2. Secret PAGES_DEPLOY_TOKEN = a PAT with write access to that public repo.
-#   3. In the PUBLIC repo: Settings → Pages → deploy from branch  gh-pages  (root).
+# Builds the MkDocs site and publishes it to GitHub Pages — from THIS (single, public) repo.
+# One-time setup: Settings → Pages → Build and deployment → Source = "GitHub Actions".
 
 on:
   push:
@@ -15,29 +10,33 @@ on:
 
 permissions:
   contents: read
+  pages: write
+  id-token: write
 
 concurrency:
-  group: deploy-site
+  group: pages
   cancel-in-progress: false
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
       - run: pip install -r requirements-docs.txt
       - run: mkdocs build --strict
-      - run: touch site/.nojekyll
-
-      - name: Publish site to the public Pages repo
-        uses: peaceiris/actions-gh-pages@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
-          personal_token: ${{ secrets.PAGES_DEPLOY_TOKEN }}
-          external_repository: ThinkTechConsultingLLC/under-the-hood-site
-          publish_dir: ./site
-          publish_branch: gh-pages
-          # cname: courses.tintech.example          # optional: a custom domain
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

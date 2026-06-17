@@ -10,6 +10,10 @@ building things yourself.*
 
 > ### 👉 New here? **[Start with the welcome guide →](START-HERE/README.md)**
 > It tells you what you need (almost nothing), how sessions work, and how to get help.
+> New to the site? See **[How to use this site](how-to-use-this-site.md)**.
+>
+> 🧪 **Ready for a hands-on lab?** Open the lab environment in your browser (free, nothing to install):
+> **[▶ Open in Codespaces](https://codespaces.new/ThinkTechConsultingLLC/under-the-hood-course)**
 
 **By the end you can:** explain how a computer and its OS work, move confidently around the
 command line, understand processes / files / networking, run and build a container, and explain
@@ -59,5 +63,4 @@ recap), and a `solution/` (for the instructor). See the full [SYLLABUS](SYLLABUS
 - **`_templates/lesson/`** — the templates new modules are built from.
 - **prompts/judge.md** — the quality rubric each lesson and notes file is checked against.
 
-<!-- HUMAN: add the published GitHub Pages / MkDocs site link here once it exists. -->
-**Course website:** _(Pages site link — to be added)_
+**Course website:** <https://thinktechconsultingllc.github.io/under-the-hood-course/>

@@ -25,7 +25,7 @@ Open any module (M1–M12) and you'll find three pages:
 The labs run in different places depending on the module — each lab tells you which, but in short:
 
 - **M1–M2** → on **your own computer** (you're exploring *your* machine).
-- **M3–M10** → in a **Codespace** — a free Linux computer that runs **in your browser**, nothing to install. Your instructor will invite you so you can open it; see **Resources → "Lab · Codespaces"** for how.
+- **M3–M10** → in a **Codespace** — a free Linux computer that runs **in your browser**, nothing to install. Just sign in with a free GitHub account and click **[▶ Open in Codespaces](https://codespaces.new/ThinkTechConsultingLLC/under-the-hood-course)** (details in **Resources → "Lab · Codespaces"**).
 - **M11–M12** → free **browser AI tools** (no setup).
 
 ## Resources (when you need them)
