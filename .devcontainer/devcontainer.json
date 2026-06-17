@@ -1,21 +1,23 @@
 {
-  "name": "Under the Hood — Linux lab (M3–M6)",
+  "name": "Under the Hood — Linux lab (M3–M10)",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
-  // M6 needs Docker; docker-in-docker gives a working Docker inside the Codespace.
+  // M10 needs Docker; docker-in-docker gives a working Docker inside the Codespace.
+  // github-cli guarantees `gh` is present for the M7 lab (Codespaces supplies its auth).
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   },
 
-  // Install the few command-line tools the labs use that aren't in the base image.
-  // Verified on the base image (Ubuntu): this installs ping, dig, nslookup, and cal.
-  //   M4 uses ps/top/kill/id (already present); M5 uses ping/dig/nslookup/curl; M3 uses cal (bonus).
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y iputils-ping bind9-dnsutils ncal",
+  // Install the extras the labs use beyond the base image, default new repos to `main`,
+  // and add Python for the M12 capstone starter.
+  //   M3 uses cal; M5 uses ping/dig/nslookup/curl; M7 uses git/gh; M12 capstone uses python.
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y iputils-ping bind9-dnsutils ncal python3 python-is-python3 && git config --global init.defaultBranch main",
 
-  // M6 lab runs a web app on container port 80 mapped to 8080 — forward it so the browser can reach it.
+  // M10 lab runs a web app on container port 80 mapped to 8080 — forward it so the browser can reach it.
   "forwardPorts": [8080],
   "portsAttributes": {
-    "8080": { "label": "M6 web app (nginx)", "onAutoForward": "notify" }
+    "8080": { "label": "M10 web app (nginx)", "onAutoForward": "notify" }
   },
 
   "remoteUser": "vscode"
