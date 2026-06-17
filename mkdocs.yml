@@ -44,8 +44,9 @@ exclude_docs: |
 
 nav:
   - Home: README.md
-  - Syllabus: SYLLABUS.md
+  - How to use this site: how-to-use-this-site.md
   - Start here: START-HERE/README.md
+  - Syllabus: SYLLABUS.md
   - "M1 · What is a computer":
       - Overview: m1-what-is-a-computer/README.md
       - Notes: m1-what-is-a-computer/notes.md
