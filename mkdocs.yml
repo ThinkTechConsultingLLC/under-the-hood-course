@@ -1,8 +1,8 @@
 site_name: "Under the Hood — How Computers & AI Really Work"
 site_description: "A hands-on, live-online course for adult beginners — how computers, the OS, networking, containers, and AI actually work."
 
-# Course content lives in the course folder; build the site from there.
-docs_dir: course-01-computers-and-ai
+# All course content lives in docs/ (MkDocs requires content in a child dir, not the repo root).
+docs_dir: docs
 site_dir: site
 use_directory_urls: true
 theme:
@@ -38,7 +38,7 @@ exclude_docs: |
   **/solution/
 
 nav:
-  - Home: README.md
+  - Home: index.md
   - How to use this site: how-to-use-this-site.md
   - Start here: START-HERE/README.md
   - Syllabus: SYLLABUS.md

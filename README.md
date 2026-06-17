@@ -97,15 +97,17 @@ Detailed setup help (terminal, Docker, Codespaces) lives in the course's **Resou
 
 ## 🗺 Repository layout
 ```
-course-01-computers-and-ai/   ← the course (one folder per module: README, notes, lab, solution)
-  ├─ START-HERE/              ← orientation
-  ├─ how-to-use-this-site.md  ← navigation guide
-  ├─ SYLLABUS.md              ← detailed syllabus
-  ├─ m1-…  …  m12-…           ← the 12 modules
-  └─ resources/               ← glossary, cheat-cards, install guides
-mkdocs.yml                    ← builds the website
-.devcontainer/                ← defines the Codespaces lab environment
-.github/workflows/            ← auto-publishes the site on every change
+docs/                    ← the whole course (this is the site content)
+  ├─ index.md            ← website home
+  ├─ START-HERE/         ← orientation: what you need and how sessions work
+  ├─ how-to-use-this-site.md
+  ├─ SYLLABUS.md         ← the detailed syllabus
+  ├─ m1-…  …  m12-…      ← the 12 modules (each: README = overview, notes.md, lab/)
+  └─ resources/          ← glossary, cheat-cards, install guides
+README.md                ← this page (the repo's front door)
+mkdocs.yml               ← builds the website
+.devcontainer/           ← defines the Codespaces lab environment
+.github/workflows/       ← auto-publishes the site on every change
 ```
 
 ---
