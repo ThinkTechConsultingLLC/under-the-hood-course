@@ -83,7 +83,7 @@ Namespaces provide process isolation by creating separate views of system resour
 
 Cgroups (control groups) enable resource accounting, limitation, and prioritization—controlling how much CPU, memory, disk I/O, and network bandwidth processes can consume. Combined with namespaces, cgroups provide the complete isolation and resource management framework that containerization depends upon.
 
-- That exact pair — **namespaces + cgroups** is how a **container** works (M10). A container isn't a tiny computer inside yours; it's the OS boxing an ordinary process with namespaces and cgroups. You're learning the engine now; M10 just drives it.
+- That exact pair **namespaces + cgroups** is how a **container** works (M10). A container isn't a tiny computer inside yours; it's the OS boxing an ordinary process with namespaces and cgroups. You're learning the engine now; M10 just drives it.
 
 **## See it yourself**
 In your Codespace: `nproc` (your cores), `free -h` (memory in use vs free), `top` (live processes — `q` to quit), `ps aux --sort=-%mem | head` (your biggest memory users), `ls -l` (permissions), and `id` (who you are).
