@@ -89,6 +89,8 @@ Reset to Default Permissions:  PS C:\user\TTC> icacls icacls "C:\path\to\folder"
 
 ✅ **You should now see:** after `chmod 600`, the permissions become **`-rw-------`** — now *only you* can read/write it. `id` shows your username and groups — *that's* the "owner" the permissions refer to. (Tidy up: `rm demo.txt`.)
 
+ **NB: Understand rwx: https://bytebytego.com/guides/linux-file-permission-illustrated/**
+
 **## Step 8: The container trick (look, don't worry if it errors)**
 A container is just the OS fencing a process off with **namespaces** (what it can *see*) and **cgroups** (what it can *use*). Peek at the namespaces on your machine:
 ```text
