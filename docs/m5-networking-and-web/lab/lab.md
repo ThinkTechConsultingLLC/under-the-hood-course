@@ -167,7 +167,7 @@ $ curl -sI https://example.com | grep -i server
 
 ---
 
-## 🎉 Your win
+**## Your win**
 You traced a website end-to-end: **DNS** turned the name into an address, your **request** got a
 **200 response** over **HTTPS**, you **decoded the padlock**, and you spotted the **CDN** serving it.
 That's what happens *every* time you open a website.
