@@ -1,14 +1,14 @@
-# Notes — M4: inside the OS — what's really happening
+**# Notes — M4: inside the OS — what's really happening**
 
-In M2 you watched the OS boot and organize files. Right now it's doing something busier and invisible: juggling **hundreds** of running programs across a handful of CPU cores, parcelling out memory, and enforcing who's allowed to touch what. This module makes all of that visible — and you'll meet the exact OS trick that makes **containers** (M10) possible.
+In M2 you watched the OS boot and organize files. Right now it's doing something busier and invisible: juggling **hundreds** of running programs across a handful of CPU cores, parcelling out memory, and enforcing who's allowed to touch what. This module makes all of that visible and you'll meet the exact OS trick that makes **containers** (M10) possible.
 
-## Processes: every running program
-A program sitting in storage is just a file. The moment it runs, the OS turns it into a **process** — a running program with its own slice of CPU time and memory, and an ID number called a **PID** (process ID). Your computer has *hundreds* of processes going at once, most of them quietly in the background (those background ones are called **daemons**).
+**## Processes: every running program**
+A program sitting in storage is just a file. The moment it runs, the OS turns it into a **process** and computer processes are running program with its own slice of CPU time and memory, and an ID number called a **PID** (process ID). Your computer has *hundreds* of processes going at once, most of them quietly in the background (those background ones are called **daemons**). A computer daemon is a program that runs continuously in the background, independently of any direct user control.
 
-## Multitasking & scheduling: a few cores, hundreds of programs
-Here's a puzzle: in M1 you found maybe 4–8 CPU cores — yet hundreds of programs run "at once." How?
+**## Multitasking & scheduling: a few cores, hundreds of programs**
+Here's a puzzle: in M1 you found maybe 4–8 CPU cores, yet hundreds of programs run "at once." How?
 
-The OS includes a **scheduler** that rapidly switches each core between processes, giving each a tiny slice of time, thousands of times a second. It's so fast it *looks* simultaneous — that's **multitasking**. (True parallelism — genuinely at once — only happens up to your core count; the scheduler fakes the rest by taking turns.)
+The OS includes a **scheduler** that rapidly switches each core between processes, giving each a tiny slice of time, thousands of times a second. It's so fast it *looks* simultaneous and that's **multitasking**. (True parallelism — genuinely at once — only happens up to your core count; the scheduler fakes the rest by taking turns.)
 
 This is also why one frozen app usually doesn't freeze the whole machine: the scheduler keeps handing the other processes their turns.
 
@@ -17,19 +17,22 @@ flowchart TB
   subgraph P["Hundreds of processes want to run"]
     a["browser"]; b["editor"]; c["music"]; d["…"]
   end
-  P --> SCH["OS scheduler — gives each a tiny turn, switching thousands of times/sec"]
+  P --> SCH["OS scheduler gives each a tiny turn, switching thousands of times/sec"]
   SCH --> CORES["a few CPU cores"]
 ```
 
-## Memory: RAM, and the swap trick
-Every running process takes a slice of **RAM** (M1) — the fast, right-now memory. The OS tracks exactly how much each one uses. When RAM fills up, the OS doesn't just crash: it uses **swap** (a.k.a. virtual memory), parking some data on storage to free RAM. It's much slower (storage isn't RAM), which is *why* a computer crawls when memory runs low — but it keeps things alive. (Callback to M2: the OS managing resources behind the scenes.)
+**## Memory: RAM, and the swap trick**
+Every running process takes a slice of **RAM** (M1). The OS tracks exactly how much each one uses. When RAM fills up, the OS doesn't just crash: it uses **swap** (a.k.a. virtual memory), parking some data on storage to free RAM. It's much slower (storage isn't RAM), which is **why** a computer crawls when memory runs low, but it keeps things alive. (Callback to M2: the OS managing resources behind the scenes.)
 
-When your computer feels sluggish, it's usually one greedy process hogging CPU or memory — and you can find it.
+When your computer feels sluggish, it's usually one greedy process hogging CPU or memory and you can find it.
 
-## Seeing and controlling what's running
+**## Seeing and controlling what's running**
 The OS lets you look and intervene. In your Codespace's Linux terminal:
-- `ps` takes a **snapshot** of processes; `ps aux --sort=-%mem` sorts them by memory — the hog floats to the top.
+
+- `ps` takes a **snapshot** of processes; `ps aux --sort=-%mem` sorts them by memory called the hog floats **(A memory hog is any computer program or process that consumes an excessively large amount of RAM (Random Access Memory). When a program takes up too much memory, it leaves fewer resources for other applications, which can cause your system to slow down, freeze, or display "out of memory" errors.)** to the top.
+  
 - `top` shows a **live**, self-updating view (press `q` to quit).
+  
 - `kill <PID>` stops **one** process by its ID; `Ctrl-C` stops a program running in your terminal.
 
 The lesson: when an app freezes, you don't reboot the whole machine — you find that one process and stop it. Everything else keeps running.
