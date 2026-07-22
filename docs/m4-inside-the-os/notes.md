@@ -1,4 +1,4 @@
-**# Notes — M4: inside the OS — what's really happening**
+**## M4: inside the OS, what's really happening**
 
 In M2 you watched the OS boot and organize files. Right now it's doing something busier and invisible: juggling **hundreds** of running programs across a handful of CPU cores, parcelling out memory, and enforcing who's allowed to touch what. This module makes all of that visible and you'll meet the exact OS trick that makes **containers** (M10) possible.
 
