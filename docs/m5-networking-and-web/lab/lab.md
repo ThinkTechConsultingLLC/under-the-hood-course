@@ -146,14 +146,14 @@ $ curl -sI https://example.com | grep -i server
   **1 Inspect Custom Response Headers**
   You can tell Httpbin to mimic any error code you want by appending it to the /status path:
   ```text
-      curl -v http://localhost:8080/status/403
+  $ curl -v http://localhost:8080/status/403
 ```
   Look at the response header lines (<). You will see HTTP/1.1 403 FORBIDDEN explicitly thrown by your container.
 
   **2 Inspect Custom Response Headers**
       You can inspect specific structural items by passing query parameters:
 ```text
-      curl -v "http://localhost:8080/response-headers?Content-Type=text/plain&My-Custom-Header=HelloCodespace"
+$ curl -v "http://localhost:8080/response-headers?Content-Type=text/plain&My-Custom-Header=HelloCodespace"
 ```
   Check the response headers. You will see your injected My-Custom-Header echoed right back to you in the system metadata.
 
@@ -161,7 +161,7 @@ $ curl -sI https://example.com | grep -i server
     By default, curl will stop if it encounters a 302 Redirect. To force curl to follow the trail to the final landing destination, use       the -L (or --location) flag:
 
 ``` text
-      curl -v -L http://localhost:8080/redirect/2
+$ curl -v -L http://localhost:8080/redirect/2
 ```
 
 
