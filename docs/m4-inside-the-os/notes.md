@@ -93,14 +93,14 @@ In your Codespace: `nproc` (your cores), `free -h` (memory in use vs free), `top
 
 - Processes have **states**: *running*, *sleeping* (waiting), or *zombie* (finished but not cleaned up).
   
-- You can nudge how much CPU a process gets — its **priority** ("niceness").
+- You can nudge how much CPU a process gets its **priority** ("niceness").
   
 - `kill` actually sends a **signal**; `kill -9` is the forceful "stop now" version.
   
 - Recall **threads** from M1: one process can have several threads sharing its memory.
 </details>
 
--------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
 ## Check yourself
 Lock in today's win — answer each in your head (or out loud), then reveal.
@@ -108,7 +108,7 @@ Lock in today's win — answer each in your head (or out loud), then reveal.
 **1. You only have a few CPU cores, yet hundreds of programs seem to run at once. How does the OS pull this off?**
 
 ??? success "Show answer"
-    The OS includes a **scheduler** that rapidly switches each core between processes, giving each a tiny slice of time thousands of times a second. It's so fast it *looks* simultaneous — that's **multitasking**. (True parallelism only happens up to your core count.)
+    The OS includes a **scheduler** that rapidly switches each core between processes, giving each a tiny slice of time thousands of times a second. It's so fast it *looks* simultaneous that's **multitasking**. (True parallelism only happens up to your core count.)
 
 **2. What is a process, and what's the difference between it and a program sitting in storage?**
 
@@ -118,7 +118,7 @@ Lock in today's win — answer each in your head (or out loud), then reveal.
 **3. What does the OS do when RAM fills up, and why does this make your computer feel slow?**
 
 ??? success "Show answer"
-    It uses **swap** (virtual memory), parking some data on storage to free up RAM instead of crashing. Storage is much slower than RAM, which is *why* the computer crawls when memory runs low — but it keeps things alive.
+    It uses **swap** (virtual memory), parking some data on storage to free up RAM instead of crashing. Storage is much slower than RAM, which is *why* the computer crawls when memory runs low but it keeps things alive.
 
 **4. When an app freezes, why don't you need to reboot the whole machine?**
 
@@ -133,4 +133,4 @@ Lock in today's win — answer each in your head (or out loud), then reveal.
 ---
 **New words** (also in `resources/glossary.md`): scheduler, swap, namespace, control group (cgroup). (Plus the M4 basics: process, PID, multitasking, permissions, owner/group/world, superuser, daemon.)
 
-**Source:** original — written for this course. Commands were verified by running them in the course's Linux (Codespaces) environment; the diagrams are original.
+**Source:** original written for this course. Commands were verified by running them in the course's Linux (Codespaces) environment; the diagrams are original.
