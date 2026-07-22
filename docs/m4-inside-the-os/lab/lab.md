@@ -1,4 +1,4 @@
-# Lab — M4: look inside a running machine (in your Codespace)
+**# Lab — M4: look inside a running machine (in your Codespace)**
 
 **You'll need:** your **Codespace** terminal (Linux in your browser). **Nothing to install.**
 New to it? See **[How to open your Codespace](../../resources/install-guides/codespaces.md)**.
