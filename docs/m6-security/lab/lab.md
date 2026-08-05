@@ -41,7 +41,7 @@ Think honestly: do you use the **same password** on more than one important site
 
 ✅ **You should now see / admit:** at least one place you reuse a password. The fix is a **password manager** one strong, unique password per site, remembered for you. (Note one to set up.)
 
----
+---------------------------------------------------------------------------------------------------------
 
 **## Part C:** Spot the phish (worksheet)
 
@@ -56,7 +56,7 @@ Here's a (fake) email. Find as many red flags as you can:
 
 ✅ **You should now see (at least 3):** the **sender domain** isn't apple.com; **urgency/threats**; a **generic greeting** ("Dear Customer"); a **link** to a fake domain (not apple.com) over **http** (no padlock). The rule: **never log in from a link in a message** go to the real site yourself.
 
----
+----------------------------------------------------------------------------------------------------------
 
 **## Part D:** Least privilege (Codespace, callback to M4)
 
@@ -68,14 +68,14 @@ $ touch /etc/test-file 2>&1 || echo "→ blocked, as expected"
 
 ✅ **You should now see:** `whoami` is your normal user (e.g. `vscode`, *not* `root`), and writing to a system folder is **blocked** ("Permission denied"). That's **least privilege**: if something malicious ran as you, it couldn't wreck the whole system. (Admin power needs `sudo` on purpose.)
 
----
+--------------------------------------------------------------------------------------------------------------
 
 ## 🎉 Your win
 You can explain how hashing, encryption, and 2FA actually protect you, you spotted a phishing
-attempt's red flags, and you saw least privilege in action — and you improved one real habit today.
+attempt's red flags, and you saw least privilege in action and you improved one real habit today.
 
 **Post it to the chat wins board:** *"I turned on 2FA / caught a phish red flag 🔒🎉"*
 
 ## Take-home (optional)
 Set up a **password manager** (many are free) and move your three most important accounts into it
-with new, unique passwords — starting with email. It's the highest-leverage hour in this whole course.
+with new, unique passwords starting with email. It's the highest-leverage hour in this whole course.
