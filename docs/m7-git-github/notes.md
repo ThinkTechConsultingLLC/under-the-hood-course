@@ -1,8 +1,8 @@
-# Notes — M7: version control with Git & GitHub
+**# Notes M7: version control with Git & GitHub**
 
-Ever ended up with `report_final_v2_FINAL_actually-final.docx`? That's version control done by hand — badly. **Git** is the tool that does it properly: a time machine for your work that saves labelled snapshots you can revisit, compare, or undo. **GitHub** is where that work lives in the cloud — backed up, shareable, and ready for teamwork. Every modern software team runs on this, and you'll use it for the rest of the course.
+Ever ended up with `report_final_v2_FINAL_actually-final.docx`? That's version control done by hand badly. **Git** is the tool that does it properly: a time machine for your work that saves labelled snapshots you can revisit, compare, or undo. **GitHub** is where that work lives in the cloud backed up, shareable, and ready for teamwork. Every modern software team runs on this, and you'll use it for the rest of the course.
 
-## What version control is — and the problem it kills
+## What version control is and the problem it kills
 Version control saves **snapshots** of your whole project over time, each with a note about what changed. So instead of a folder full of `_v2_FINAL` files, you keep **one** folder with a complete, labelled history you can rewind. You can see exactly what changed, when, and why — and undo any of it.
 
 ## Commits: snapshots with a message
