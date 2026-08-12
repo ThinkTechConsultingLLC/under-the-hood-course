@@ -5,7 +5,7 @@ Ever ended up with `report_final_v2_FINAL_actually-final.docx`? That's version c
 ## What version control is and the problem it kills
 Version control saves **snapshots** of your whole project over time, each with a note about what changed. So instead of a folder full of `_v2_FINAL` files, you keep **one** folder with a complete, labelled history you can rewind. You can see exactly what changed, when, and why — and undo any of it.
 
-## Commits: snapshots with a message
+**## Commits: snapshots with a message**
 The unit of history is a **commit** — a saved snapshot plus a short message. The flow is two steps:
 1. **stage** the changes you want to save (`git add`),
 2. **commit** them with a message (`git commit -m "what I did"`).
