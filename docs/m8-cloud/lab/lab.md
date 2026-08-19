@@ -1,15 +1,15 @@
-# Lab — M8: prove you're already in the cloud
+# Lab M8: prove you're already in the cloud
 
 **You'll need:** your **Codespace** terminal and a browser. **Nothing to install.**
 New to it? See **[How to open your Codespace](../../resources/install-guides/codespaces.md)**.
 **Time:** ~25 minutes • **Work in your breakout pair.**
 
-> Heads up: these commands just *report facts* about the machine you're on — nothing changes.
+> Heads up: these commands just *report facts* about the machine you're on nothing changes.
 > The whole point today is realizing where you actually are.
 
----
+--------------------------------------------------------------------------------
 
-## Step 1 — This terminal is not your laptop
+## Step 1: This terminal is not your laptop
 ```text
 $ hostname
 $ uname -srm
@@ -18,7 +18,7 @@ $ nproc
 
 ✅ **You should now see:** a **random hostname** (like `613cb477f82a`, not "MyLaptop"), a **Linux** system, and a core count. This is a *rented Linux machine*, handed to you on demand — your actual laptop might be a Mac or Windows with a different name.
 
-## Step 2 — It's somewhere else (a data center)
+**## Step 2: It's somewhere else (a data center)**
 ```text
 $ curl -s https://api.ipify.org ; echo
 ```
