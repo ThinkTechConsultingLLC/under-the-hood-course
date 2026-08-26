@@ -62,7 +62,7 @@ $ docker stop <paste the container ID>
 ## Step 6: Make a project with a page
 ```text
 $ mkdir my-site && cd my-site
-$ echo "<h1>Hello from MY container!</h1>" > index.html
+$ echo '<h1>Hello from MY container!</h1>' > index.html
 ```
 
 ✅ **You should now see:** `ls` lists `index.html`. (Edit it to say anything.)
