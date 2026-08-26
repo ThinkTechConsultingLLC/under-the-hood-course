@@ -1,12 +1,12 @@
-# Notes — M9: virtualization & VMs
+# Notes M9: virtualization & VMs
 
-How does one physical server in a data center become 50 rentable cloud computers (M8)? And what's *really* underneath a container (M4, and M10 next)? The answer to both is **virtualization** — making one real computer act like many. This module is the layer beneath the cloud and containers; once you see it, both stop being magic.
+How does one physical server in a data center become 50 rentable cloud computers (M8)? And what's *really* underneath a container (M4, and M10 next)? The answer to both is **virtualization** making one real computer act like many. This module is the layer beneath the cloud and containers; once you see it, both stop being magic.
 
 ## Virtualization: one machine pretending to be many
-**Virtualization** is software that creates fake — "virtual" — computers on top of one real one. Each virtual computer believes it has its own hardware and runs as if it were a whole, separate machine. One powerful box can host many independent ones.
+**Virtualization** is software that creates fake "virtual" computers on top of one real one. Each virtual computer believes it has its own hardware and runs as if it were a whole, separate machine. One powerful box can host many independent ones.
 
 ## Virtual machines & the hypervisor
-A **virtual machine (VM)** is a complete fake computer: its own **guest operating system**, its own pretend hardware, running on top of a real machine (the **host**). The software that creates and runs VMs — slicing the real CPU, RAM, and disk among them — is the **hypervisor**.
+A **virtual machine (VM)** is a complete fake computer: its own **guest operating system**, its own pretend hardware, running on top of a real machine (the **host**). The software that creates and runs VMs — slicing the real CPU, RAM, and disk among them  is the **hypervisor**.
 
 ```mermaid
 flowchart TB
