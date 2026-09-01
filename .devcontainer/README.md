@@ -1,4 +1,4 @@
-# Dev container — the hosted Linux lab for M3–M6
+# Dev container the hosted Linux lab for M3–M6
 
 This `.devcontainer/` gives every student **one identical Linux environment in the browser**
 (via GitHub Codespaces), so the command-line-and-up modules don't depend on each learner's OS.
@@ -22,8 +22,8 @@ Used for **M3 (command line), M4 (inside the OS), M5 (networking), M6 (container
 
 ## ⚠️ Still to verify in a live Codespace (can't be tested locally)
 - **`ping` may be restricted** inside the container (ICMP/capabilities). `dig`/`nslookup`/`curl`
-  all work and carry M5's win even if `ping` is blocked — test it once in a real Codespace.
-- The **docker-in-docker** flow and port 8080 forwarding (M6) — open a Codespace and run the M6 lab end-to-end.
+  all work and carry M5's win even if `ping` is blocked test it once in a real Codespace.
+- The **docker-in-docker** flow and port 8080 forwarding (M6) open a Codespace and run the M6 lab end-to-end.
 - Free-tier compute limits for your cohort (and whether **GitHub Education** expands them).
 
 ## Requires
