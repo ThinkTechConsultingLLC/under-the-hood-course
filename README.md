@@ -58,9 +58,9 @@ Every module title links to its **Overview** on the live site; each row also lin
 ## The labs, how to open them (the important part)
 Labs are where the learning happens. Where each one runs:
 
-- **M1–M2** → on **your own computer** (you explore *your* machine nothing to set up).
-- **M3–M10** → in a **Codespace**: a free Linux computer **in your browser**, with everything pre-installed.
-- **M11–M12** → free **browser AI tools** (no setup).
+- **M1–>M2** → on **your own computer** (you explore *your* machine nothing to set up).
+- **M3–>M10** → in a **Codespace**: a free Linux computer **in your browser**, with everything pre-installed.
+- **M11–>M12** → free **browser AI tools** (no setup).
 
 ### Opening a Codespace (M3–M10)  for total beginners
 1. Make a free GitHub account (if you haven't): [github.com/signup](https://github.com/signup).
@@ -77,7 +77,7 @@ Nothing to install, works on any laptop (even a Chromebook). Codespaces include 
 - **Founders, PMs, analysts, and the curious** who keep hearing "the cloud," "containers," "LLMs" and want the real picture, not buzzwords.
 - **Students & self-learners** who learn best by *doing* every module ends with something that works.
 
-By the end you can build a small **capstone** e.g. an AI model running in a container, in the cloud, tracked in Git — and explain every layer in your own words.
+By the end you can build a small **capstone** e.g. an AI model running in a container, in the cloud, tracked in Git and explain every layer in your own words.
 
 ---------------------------------------------------------------------------------
 
