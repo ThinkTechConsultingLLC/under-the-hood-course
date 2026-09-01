@@ -1,5 +1,5 @@
 {
-  "name": "Under the Hood — Linux lab (M3–M10)",
+  "name": "Under the Hood Linux lab (M3–M10)",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
   // M10 needs Docker; docker-in-docker gives a working Docker inside the Codespace.
@@ -14,7 +14,7 @@
   //   M3 uses cal; M5 uses ping/dig/nslookup/curl; M7 uses git/gh; M12 capstone uses python.
   "postCreateCommand": "sudo apt-get update && sudo apt-get install -y iputils-ping bind9-dnsutils ncal python3 python-is-python3 && git config --global init.defaultBranch main",
 
-  // M10 lab runs a web app on container port 80 mapped to 8080 — forward it so the browser can reach it.
+  // M10 lab runs a web app on container port 80 mapped to 8080 forward it so the browser can reach it.
   "forwardPorts": [8080],
   "portsAttributes": {
     "8080": { "label": "M10 web app (nginx)", "onAutoForward": "notify" }
