@@ -20,7 +20,7 @@ Used for **M3 (command line), M4 (inside the OS), M5 (networking), M6 (container
 - Confirmed `apt-get install -y iputils-ping bind9-dnsutils ncal` installs `ping`, `dig`,
   `nslookup`, `cal` (the `postCreateCommand`).
 
-## ⚠️ Still to verify in a live Codespace (can't be tested locally)
+## Still to verify in a live Codespace (can't be tested locally)
 - **`ping` may be restricted** inside the container (ICMP/capabilities). `dig`/`nslookup`/`curl`
   all work and carry M5's win even if `ping` is blocked test it once in a real Codespace.
 - The **docker-in-docker** flow and port 8080 forwarding (M6) open a Codespace and run the M6 lab end-to-end.
