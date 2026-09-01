@@ -1,6 +1,6 @@
 name: Deploy course site
 
-# Builds the MkDocs site and publishes it to GitHub Pages — from THIS (single, public) repo.
+# Builds the MkDocs site and publishes it to GitHub Pages from THIS (single, public) repo.
 # One-time setup: Settings → Pages → Build and deployment → Source = "GitHub Actions".
 
 on:
