@@ -3,7 +3,7 @@ M11: AI Fundamentals I what AI actually is
 
 "AI" is splashed on everything and, by itself, means almost nothing. These notes clear up the buzzwords AI vs machine learning vs deep learning vs LLMs explain *why* AI suddenly got so good, and set up the lab where you **train a model with your own examples and watch it learn**. No math, no code.
 
-## Defination, not rivals
+## Definations, not rivals
 They Compliment one another:
 
 - **Artificial Intelligence (AI)** the umbrella: any computer doing something that *seems* smart.
